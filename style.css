@@ -161,11 +161,11 @@
 
   .card {
     width: 100%;
-    margin-top: 173rem;
+    margin-top: 167rem;
   }
 
   .box {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     gap: 0rem;
@@ -173,14 +173,12 @@
 
   .box-1 {
     display: flex;
-    flex-direction: row;
     margin-right: 20px;
     gap: 2px;
   }
 
   .box-2 {
     display: flex;
-    flex-direction: row;
     gap: 2px;
     margin-left: 20px;
   }
@@ -188,17 +186,14 @@
   .box-1 a {
     bottom: 10px;
     width: 20%;
-    padding: .5rem;
+    padding: .4rem;
     background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
   }
 
   .box-1 img {
-    height: 130px;
+    height: 150px;
     border-radius: 0.8rem;
-    width: 100%;
+    width: 80%;
   }
 
   .repos {
