@@ -5,17 +5,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navbar styles */
 .navbar {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1rem;
   background: tomato;
 }
 
 .navcenter {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,91 +34,92 @@
   cursor: pointer;
 }
 
+/* Card container styles */
 .card-container {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding-top: 53%;
+  padding-top: 20vh; /* Adjust vertical spacing */
+  margin-top: 60rem;
 }
 
+/* Card styles */
 .card {
-  margin-top: 100%;
-  width: 50%;
-  height: ;
+  top: 90px;
+  position: absolute;
+  width: 100%; 
+  max-width: 800px; 
   padding: 1rem;
   background-color: tomato;
   border-radius: 0.8rem;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
-.box-1 img {
-  height: 230px;
-  border-radius: 0.8rem;
-  width: 100%;
-}
-
-.box-1 {
+.image{
+  background-color: skyblue;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 5px;
+  height: 400px;
+  width: 70%;
+  
 }
 
 .box {
-  width: 70%;
   display: flex;
-  justify-content: space-between;
-  gap: 0;
+  justify-content: space-around;
+  letter-spacing: .5px;
 }
 
-.box-1 a {
-  bottom: 10px;
-  width: 20%;
-  padding: 1rem;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
+.box-1{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.box-2 {
+.box-2{
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.repo img {
-  height: 50px;
+.profile{
+  display: flex;
+  justify-content: center;
 }
 
-.box-2 a {
+.profile a{
+  text-align: center;
   bottom: 10px;
-  width: 100%;
-  padding: 1rem;
-  margin-top: 20px;
-  background-color: black;
-  color: white;
+  width: 20%;
+  color: #fff;
+  padding: .4rem;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 10px;
+  background-color: black;
 }
 
-.repos {
-  width: 90%;
+/* Repository styles */
+.repos h2{
+  margin-bottom: 15px;
 }
 
 .repo1 {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-
+/* Loader styles */
 .loader {
   width: 50px;
   aspect-ratio: 1;
@@ -134,10 +132,8 @@
 .loader:before,
 .loader:after {
   background:
-    radial-gradient(closest-side at 50% 12.5%,
-      #f03355 96%, #0000) 50% 0/20% 80% repeat-y,
-    radial-gradient(closest-side at 12.5% 50%,
-      #f03355 96%, #0000) 0 50%/80% 20% repeat-x;
+    radial-gradient(closest-side at 50% 12.5%, #f03355 96%, #0000) 50% 0/20% 80% repeat-y,
+    radial-gradient(closest-side at 12.5% 50%, #f03355 96%, #0000) 0 50%/80% 20% repeat-x;
 }
 
 .loader:before,
@@ -157,46 +153,25 @@
   }
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
-
   .card {
+    top:-450px;
     width: 100%;
-    margin-top: 167rem;
+    margin-top: 83vh; 
   }
 
   .box {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    gap: 0rem;
+    flex-direction: ;
+    gap: 10px;
   }
 
-  .box-1 {
-    display: flex;
-    margin-right: 20px;
-    gap: 2px;
-  }
-
-  .box-2 {
-    display: flex;
-    gap: 2px;
-    margin-left: 20px;
+  .card img {
+    height: 300px;
+    width: 100%;
   }
 
   .box-1 a {
-    bottom: 10px;
-    width: 20%;
-    padding: .4rem;
-    background-color: black;
-  }
-
-  .box-1 img {
-    height: 150px;
-    border-radius: 0.8rem;
-    width: 80%;
-  }
-
-  .repos {
-    width: 99%;
+    width: 100%;
   }
 }
