@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: tomato;
+}
+
+.navcenter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#input {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: transparent;
+}
+
+.btn {
+  border: transparent;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background: slategray;
+  color: white;
+  cursor: pointer;
+}
+
+.card-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 53%;
+}
+
+.card {
+  margin-top: 100%;
+  width: 50%;
+  height: ;
+  padding: 1rem;
+  background-color: tomato;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box-1 img {
+  height: 230px;
+  border-radius: 0.8rem;
+  width: 100%;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.box-1 a {
+  bottom: 10px;
+  width: 20%;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.repo img {
+  height: 50px;
+}
+
+.box-2 a {
+  bottom: 10px;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.repos {
+  width: 90%;
+}
+
+.repo1 {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  -webkit-mask: conic-gradient(from 15deg, #0000, #000);
+  animation: l26 1s infinite steps(12);
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background:
+    radial-gradient(closest-side at 50% 12.5%,
+      #f03355 96%, #0000) 50% 0/20% 80% repeat-y,
+    radial-gradient(closest-side at 12.5% 50%,
+      #f03355 96%, #0000) 0 50%/80% 20% repeat-x;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  transform: rotate(30deg);
+}
+
+.loader:after {
+  transform: rotate(60deg);
+}
+
+@keyframes l26 {
+  100% {
+    transform: rotate(1turn)
+  }
+}
+
+@media (max-width: 768px) {
+
+  .card {
+    width: 100%;
+    margin-top: 173rem;
+  }
+
+  .box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 0rem;
+  }
+
+  .box-1 {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    gap: 2px;
+  }
+
+  .box-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-left: 20px;
+  }
+
+  .box-1 a {
+    bottom: 10px;
+    width: 20%;
+    padding: .5rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  .box-1 img {
+    height: 130px;
+    border-radius: 0.8rem;
+    width: 100%;
+  }
+
+  .repos {
+    width: 99%;
+  }
+}
